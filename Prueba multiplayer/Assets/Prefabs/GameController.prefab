@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8549231495602100714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8549231495602100717}
+  - component: {fileID: 4697861471188362990}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8549231495602100717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8549231495602100714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 343.64655, y: 194.46959, z: -9.436483}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4697861471188362990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8549231495602100714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74272e7cdbfc5d14595a146b9e53cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 1911309060440038095, guid: 95d6f79ee9288544ba289f4197872e70, type: 3}
+  destroyablesPrefab:
+  - {fileID: 1964431040936758, guid: 46a1b432358ef404bacd27bbf3af526a, type: 3}
+  - {fileID: 1223915382249154, guid: f12ea278f83d28549b908fb0388e2c8c, type: 3}
+  - {fileID: 1872117079877494, guid: 7851bf687cf30b54099b46ffd28c2486, type: 3}
+  - {fileID: 1519524666773970, guid: 1bf2ea9dc1cf9ab4590343e541d4d3a2, type: 3}
+  - {fileID: 1831902070939854, guid: 907f15ddb9ee75c4bad859d1e5d4729c, type: 3}
