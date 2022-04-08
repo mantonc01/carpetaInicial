@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using Photon.Pun;
 
-public class FP_Shooting : MonoBehaviour {
+public class FP_Shooting : MonoBehaviourPunCallbacks {
 	
     public float 		ShootingSlowness;
     public GameObject 	SpawnPositionCar;
@@ -41,11 +42,11 @@ public class FP_Shooting : MonoBehaviour {
     }
 	
 	void Update () {
-		if (Input.GetKey (KeyCode.Mouse0) && !beingHandled) {
+		if (Input.GetKey (KeyCode.Mouse0) && !beingHandled && photonView.IsMine) {
 			StartCoroutine (Shooting ());
 			
 		}
-		if (Input.GetKey (KeyCode.Mouse0) && !beingHandled) {
+		if (Input.GetKey (KeyCode.Mouse0) && !beingHandled && photonView.IsMine) {
 			StartCoroutine (Shooting_01 ());
 
 		}

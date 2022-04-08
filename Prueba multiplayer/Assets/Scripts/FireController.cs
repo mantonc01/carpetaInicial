@@ -20,9 +20,13 @@ public class FireController : MonoBehaviourPunCallbacks
         RaycastHit hit; //Aquí se guardará la referenciaa al objeto con el que impacta el Raycast
 
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0)&&photonView.IsMine)
         {
             transform.Rotate(transform.rotation.x,transform.rotation.y+60,transform.rotation.z);
+        }
+        if (Input.GetKeyUp(KeyCode.Mouse0)&&photonView.IsMine)
+        {
+            transform.Rotate(transform.rotation.x,transform.rotation.y-60,transform.rotation.z);
         }
         
         if (Input.GetKey(KeyCode.Mouse0) && photonView.IsMine)
@@ -36,7 +40,8 @@ public class FireController : MonoBehaviourPunCallbacks
                 {
                     Debug.Log("Le has dado a " + hit.collider.gameObject.name);
                     //PhotonNetwork.Destroy(hit.collider.gameObject);
-                    DestroyTarget(hit.collider.gameObject);
+                    hit.transform.GetComponentInChildren<ParticleSystem>().Play();
+                    DestroyTarget(hit.transform.gameObject);
                 }
                 else
                 {
