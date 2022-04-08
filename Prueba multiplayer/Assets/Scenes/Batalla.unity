@@ -38929,10 +38929,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FishMan
       objectReference: {fileID: 0}
-    - target: {fileID: 387155261346979508, guid: e54c5e7c5d78aac4c878449294c03e43, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1360927543119338628, guid: e54c5e7c5d78aac4c878449294c03e43, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -39050,10 +39046,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoatMan
       objectReference: {fileID: 0}
-    - target: {fileID: 585838641479771484, guid: cd02356acb31a1d498704b95627b8e55, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd02356acb31a1d498704b95627b8e55, type: 3}
 --- !u!1001 &2700874170707504416
@@ -39135,10 +39127,6 @@ PrefabInstance:
     - target: {fileID: 7929403761056377696, guid: 84fd6450cb266594bb02ea2f3159b8a7, type: 3}
       propertyPath: m_Name
       value: Driade
-      objectReference: {fileID: 0}
-    - target: {fileID: 7929403761056377696, guid: 84fd6450cb266594bb02ea2f3159b8a7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7929403761056377706, guid: 84fd6450cb266594bb02ea2f3159b8a7, type: 3}
       propertyPath: sceneViewId
