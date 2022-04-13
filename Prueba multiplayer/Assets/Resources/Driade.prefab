@@ -153,22 +153,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &490394946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2673301606462093611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 589da32c02434d04c8f98e2507dac20e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShootingSlowness: 0.2
-  SpawnPositionCar: {fileID: 2673301606462093611}
-  Cardridge: {fileID: 1838114916151622, guid: e6bd218aa9023e841ad513d3960681ff, type: 3}
-  Cardridge01: {fileID: 1170647774315830, guid: 2c2e3576c0d3efb4ba7b2333ee62f998, type: 3}
 --- !u!1 &7929403759020188647
 GameObject:
   m_ObjectHideFlags: 0
@@ -7914,3 +7898,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5409842471469197013, guid: a1ce908bd03ca8d4d88b6f274062a0ba, type: 3}
   m_PrefabInstance: {fileID: 7929403759071420414}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &490394946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2673301606462093611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 589da32c02434d04c8f98e2507dac20e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShootingSlowness: 0.2
+  SpawnPositionCar: {fileID: 2673301606462093611}
+  Cardridge: {fileID: 1838114916151622, guid: e6bd218aa9023e841ad513d3960681ff, type: 3}
+  Cardridge01: {fileID: 1170647774315830, guid: 2c2e3576c0d3efb4ba7b2333ee62f998, type: 3}
