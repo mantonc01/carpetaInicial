@@ -33,14 +33,14 @@ public class FireController : MonoBehaviourPunCallbacks
         {
             
             // Does the ray intersect any objects excluding the player layer
-            if (Physics.Raycast(transform.position + new Vector3(0, .25f, 0), transform.TransformDirection(Vector3.forward), out hit, fireDistance, layerMask))
+            if (Physics.Raycast(transform.position + new Vector3(0, .25f, 0), transform.TransformDirection(Vector3.forward+ new Vector3(-1.73f,0,0)), out hit, fireDistance, layerMask))
             {
                 string hitTag = hit.collider.tag;
                 if (hitTag != "Player")
                 {
                     Debug.Log("Le has dado a " + hit.collider.gameObject.name);
                     //PhotonNetwork.Destroy(hit.collider.gameObject);
-                    hit.transform.GetComponentInChildren<ParticleSystem>().Play();
+                    hit.transform.GetComponent<ParticleSystem>().Play();
                     DestroyTarget(hit.transform.gameObject);
                 }
                 else
@@ -55,9 +55,6 @@ public class FireController : MonoBehaviourPunCallbacks
                     damageSource.Play();
                 }
                 
-                /*Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-                Debug.Log("Le has dado a " + hit.collider.gameObject.name);
-                PhotonNetwork.Destroy(hit.collider.gameObject);*/
             }
             
         }
