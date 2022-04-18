@@ -19,17 +19,29 @@ public class FireController : MonoBehaviourPunCallbacks
 
         RaycastHit hit; //Aquí se guardará la referenciaa al objeto con el que impacta el Raycast
 
+
+        if (Input.GetKeyDown(KeyCode.Mouse0)&&photonView.IsMine)
+        {
+            transform.Rotate(transform.rotation.x,transform.rotation.y+60,transform.rotation.z);
+        }
+        if (Input.GetKeyUp(KeyCode.Mouse0)&&photonView.IsMine)
+        {
+            transform.Rotate(transform.rotation.x,transform.rotation.y-60,transform.rotation.z);
+        }
+        
         if (Input.GetKey(KeyCode.Mouse0) && photonView.IsMine)
         {
+            
             // Does the ray intersect any objects excluding the player layer
-            if (Physics.Raycast(transform.position + new Vector3(0, .25f, 0), transform.TransformDirection(Vector3.forward), out hit, fireDistance, layerMask))
+            if (Physics.Raycast(transform.position + new Vector3(0, .25f, 0), transform.TransformDirection(Vector3.forward+ new Vector3(-1.73f,0,0)), out hit, fireDistance, layerMask))
             {
                 string hitTag = hit.collider.tag;
                 if (hitTag != "Player")
                 {
                     Debug.Log("Le has dado a " + hit.collider.gameObject.name);
                     //PhotonNetwork.Destroy(hit.collider.gameObject);
-                    DestroyTarget(hit.collider.gameObject);
+                    hit.transform.GetComponent<ParticleSystem>().Play();
+                    DestroyTarget(hit.transform.gameObject);
                 }
                 else
                 {
@@ -43,15 +55,8 @@ public class FireController : MonoBehaviourPunCallbacks
                     damageSource.Play();
                 }
                 
-                /*Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-                Debug.Log("Le has dado a " + hit.collider.gameObject.name);
-                PhotonNetwork.Destroy(hit.collider.gameObject);*/
             }
-            /*else
-            {
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-                Debug.Log("Has fallado");
-            }*/
+            
         }
     }
 

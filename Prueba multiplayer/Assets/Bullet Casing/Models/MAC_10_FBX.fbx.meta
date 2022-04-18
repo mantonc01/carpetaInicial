@@ -1,73 +1,203 @@
 fileFormatVersion: 2
 guid: aa2890ea6cdc2cd4daf38a80a0927687
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: MAC10
-    100002: MAC10_2
-    100004: MAC10_3
-    100006: MAC10_4
-    100008: MAC10_5
-    100010: MAC10_6
-    100012: MAC10_7
-    100014: MAC10_8
-    100016: MAC10_9
-    100018: //RootNode
-    400000: MAC10
-    400002: MAC10_2
-    400004: MAC10_3
-    400006: MAC10_4
-    400008: MAC10_5
-    400010: MAC10_6
-    400012: MAC10_7
-    400014: MAC10_8
-    400016: MAC10_9
-    400018: //RootNode
-    2100000: Cartridge
-    2100002: Bullets
-    2100004: Stock
-    2100006: Small_Parts
-    2100008: Magazin
-    2100010: Canon
-    2100012: Bolt
-    2100014: Upper
-    2100016: Lower
-    2300000: MAC10
-    2300002: MAC10_2
-    2300004: MAC10_3
-    2300006: MAC10_4
-    2300008: MAC10_5
-    2300010: MAC10_6
-    2300012: MAC10_7
-    2300014: MAC10_8
-    2300016: MAC10_9
-    3300000: MAC10
-    3300002: MAC10_2
-    3300004: MAC10_3
-    3300006: MAC10_4
-    3300008: MAC10_5
-    3300010: MAC10_6
-    3300012: MAC10_7
-    3300014: MAC10_8
-    3300016: MAC10_9
-    4300000: MAC10
-    4300002: MAC10_2
-    4300004: MAC10_3
-    4300006: MAC10_4
-    4300008: MAC10_5
-    4300010: MAC10_6
-    4300012: MAC10_7
-    4300014: MAC10_8
-    4300016: MAC10_9
-    6400000: MAC10
-    6400002: MAC10_2
-    6400004: MAC10_3
-    6400006: MAC10_4
-    6400008: MAC10_5
-    6400010: MAC10_6
-    6400012: MAC10_7
-    6400014: MAC10_8
-    6400016: MAC10_9
+  serializedVersion: 21202
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: MAC10
+  - first:
+      1: 100002
+    second: MAC10_2
+  - first:
+      1: 100004
+    second: MAC10_3
+  - first:
+      1: 100006
+    second: MAC10_4
+  - first:
+      1: 100008
+    second: MAC10_5
+  - first:
+      1: 100010
+    second: MAC10_6
+  - first:
+      1: 100012
+    second: MAC10_7
+  - first:
+      1: 100014
+    second: MAC10_8
+  - first:
+      1: 100016
+    second: MAC10_9
+  - first:
+      1: 100018
+    second: //RootNode
+  - first:
+      4: 400000
+    second: MAC10
+  - first:
+      4: 400002
+    second: MAC10_2
+  - first:
+      4: 400004
+    second: MAC10_3
+  - first:
+      4: 400006
+    second: MAC10_4
+  - first:
+      4: 400008
+    second: MAC10_5
+  - first:
+      4: 400010
+    second: MAC10_6
+  - first:
+      4: 400012
+    second: MAC10_7
+  - first:
+      4: 400014
+    second: MAC10_8
+  - first:
+      4: 400016
+    second: MAC10_9
+  - first:
+      4: 400018
+    second: //RootNode
+  - first:
+      21: 2100000
+    second: Cartridge
+  - first:
+      21: 2100002
+    second: Bullets
+  - first:
+      21: 2100004
+    second: Stock
+  - first:
+      21: 2100006
+    second: Small_Parts
+  - first:
+      21: 2100008
+    second: Magazin
+  - first:
+      21: 2100010
+    second: Canon
+  - first:
+      21: 2100012
+    second: Bolt
+  - first:
+      21: 2100014
+    second: Upper
+  - first:
+      21: 2100016
+    second: Lower
+  - first:
+      23: 2300000
+    second: MAC10
+  - first:
+      23: 2300002
+    second: MAC10_2
+  - first:
+      23: 2300004
+    second: MAC10_3
+  - first:
+      23: 2300006
+    second: MAC10_4
+  - first:
+      23: 2300008
+    second: MAC10_5
+  - first:
+      23: 2300010
+    second: MAC10_6
+  - first:
+      23: 2300012
+    second: MAC10_7
+  - first:
+      23: 2300014
+    second: MAC10_8
+  - first:
+      23: 2300016
+    second: MAC10_9
+  - first:
+      33: 3300000
+    second: MAC10
+  - first:
+      33: 3300002
+    second: MAC10_2
+  - first:
+      33: 3300004
+    second: MAC10_3
+  - first:
+      33: 3300006
+    second: MAC10_4
+  - first:
+      33: 3300008
+    second: MAC10_5
+  - first:
+      33: 3300010
+    second: MAC10_6
+  - first:
+      33: 3300012
+    second: MAC10_7
+  - first:
+      33: 3300014
+    second: MAC10_8
+  - first:
+      33: 3300016
+    second: MAC10_9
+  - first:
+      43: 4300000
+    second: MAC10
+  - first:
+      43: 4300002
+    second: MAC10_2
+  - first:
+      43: 4300004
+    second: MAC10_3
+  - first:
+      43: 4300006
+    second: MAC10_4
+  - first:
+      43: 4300008
+    second: MAC10_5
+  - first:
+      43: 4300010
+    second: MAC10_6
+  - first:
+      43: 4300012
+    second: MAC10_7
+  - first:
+      43: 4300014
+    second: MAC10_8
+  - first:
+      43: 4300016
+    second: MAC10_9
+  - first:
+      64: 6400000
+    second: MAC10
+  - first:
+      64: 6400002
+    second: MAC10_2
+  - first:
+      64: 6400004
+    second: MAC10_3
+  - first:
+      64: 6400006
+    second: MAC10_4
+  - first:
+      64: 6400008
+    second: MAC10_5
+  - first:
+      64: 6400010
+    second: MAC10_6
+  - first:
+      64: 6400012
+    second: MAC10_7
+  - first:
+      64: 6400014
+    second: MAC10_8
+  - first:
+      64: 6400016
+    second: MAC10_9
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -115,7 +245,7 @@ ModelImporter:
       name: Upper
     second: {fileID: 2100000, guid: cdcd4c4b3ee2cbf4ebf59b296bc90392, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -124,6 +254,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -144,37 +275,50 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.15
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 54
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 9
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -184,14 +328,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.0015
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
