@@ -15,3 +15,14 @@ OBJETIVO
 Poner en práctica los conocimientos adquiridos, aplicar nuevas mécanicas, y desarrollar y publicar un juego.
 
 CREADORES DE ASSETS Y RECURSOS UTILIZADOS
+
+bibliografia;
+Obra: En Movimiento
+Música de https://www.fiftysounds.com/es/
+
+Obra: Todo Empieza Aquí
+Música de https://www.fiftysounds.com/es/
+
+mixamo
+
+invector
