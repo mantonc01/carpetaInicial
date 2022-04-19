@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
@@ -41,7 +42,7 @@ public class FireController : MonoBehaviourPunCallbacks
                     Debug.Log("Le has dado a " + hit.collider.gameObject.name);
                     //PhotonNetwork.Destroy(hit.collider.gameObject);
                     hit.transform.GetComponent<ParticleSystem>().Play();
-                    DestroyTarget(hit.transform.gameObject);
+                    StartCoroutine(DestruirObjeto(hit.transform.gameObject));
                 }
                 else
                 {
@@ -65,4 +66,12 @@ public class FireController : MonoBehaviourPunCallbacks
     {
         Destroy(destroyable);
     }
+
+    IEnumerator DestruirObjeto(GameObject destroyable)
+    {
+        yield return new WaitForSeconds(2f);
+        DestroyTarget(destroyable);
+        
+    }
+    
 }
