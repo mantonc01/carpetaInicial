@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 725957268}
-  - component: {fileID: 725957270}
   - component: {fileID: 725957269}
   m_Layer: 6
   m_Name: bolt
@@ -33,22 +32,6 @@ Transform:
   m_Father: {fileID: 280629706203757792}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &725957270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725957267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 589da32c02434d04c8f98e2507dac20e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShootingSlowness: 0
-  SpawnPositionCar: {fileID: 0}
-  Cardridge: {fileID: 0}
-  Cardridge01: {fileID: 0}
 --- !u!114 &725957269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,7 +231,7 @@ MonoBehaviour:
   groundMinDistance: 0.25
   groundMaxDistance: 0.5
   slopeLimit: 75
-  fireSound: {fileID: 0}
+  fireSound: {fileID: 8300000, guid: 9e111322cd4bddc4891a24a8c434a0b3, type: 3}
 --- !u!114 &1421842770988570553
 MonoBehaviour:
   m_ObjectHideFlags: 0
